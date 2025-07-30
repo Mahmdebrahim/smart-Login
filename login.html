@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--main css file project1-->
+  <link rel="stylesheet" href="css/style-login.css"/>
+  <!--normalize file project1-->
+  <link rel="stylesheet" href="css/normalize.css"/>
+  <!-- font awesome library-->
+  <!--<link rel="stylesheet" href="css/all.min.css">-->
+  <!--gogle fonts project1-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!--<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">-->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <title>Mal3aby | online booking</title>
+</head>
+ <body> 
+  <section class="grid justify-center items-center h-screen">
+    <div class=" login rounded-2xl p-2 flex justify-around ">
+      <div class="img-l hidden md:block">
+        <img src="imgs/im2.jpg" alt="" class="max-w-full w-sm h-full rounded-2xl"></img>
+      </div>
+      <div class="">
+        <div class="grid justify-items-center">
+          <img src="imgs/logo.png" class="w-2/5 ">
+        </div>
+        <div class="p-2 flex-column justify-items-center">
+          <div class="info grow mb-5 text-center">
+            <h2 class="leading font-bold text-2xl text-[var(--main-color)]">Log in to your Account</h2>
+            <p class="text-sm text-gray-400">Welcom to Mal3aby</p>
+          </div>
+          <form class="flex flex-col gap-3 items-center justify-items-center">
+            <div class="w-fit relative mail">
+              <input type="email" name="Email" id="email" placeholder="Email" class="p-2 relative text-gray-600 border-1 border-gray-300 rounded-sm focus:border-[var(--main-color)] focus:outline-[var(--main-color)]">
+              <a><i class="fa-solid fa-envelope absolute right-2 top-2.5 text-[var(--main-color)]"></i></a>
+            </div>
+            <div class="w-fit relative pass">
+              <input type="password" name="password" id="password" placeholder="Password" class="p-2 relative text-gray-600 border-1 border-gray-300 rounded-sm focus:border-[var(--main-color)] focus:outline-[var(--main-color)]">
+              <a><i class="fa-solid fa-eye absolute right-2 top-2.5 text-[var(--main-color)]" id="show" onclick="show()" ></i></a>
+            </div>
+            <div class="flex justify-end bg-gry-900 w-full">
+              <a href="#" class="text-[var(--main-color)] text-sm">Forget Password ?</a>  
+            </div>
+            <span class="text-gray-400 relative or">or</span>
+            <div class="w-full flex items-center justify-center gap-2 text-center font-bold mt-0 tet-[var(--main-color)] border-1 border-[var(--main-color)] p-3 rounded-sm">
+              <input type="button" value="login with Google">
+              <i class="fa-brands fa-google"></i>
+            </div>
+            <div class="w-full text-white text-center font-bold bg-[var(--main-color)] p-3 rounded-full">
+              <!--<input type="button" value="login"> -->
+              <button id="loginbtn">login</button>
+            </div>
+            <div class="flex gap-1 text-sm">
+              <p class="font-bold">Don't have an account?</p>
+              <a href="signin.html" class="text-[var(--main-color)]">Sign up</a>
+            </div>
+          </form>
+          <div class="mt-3 flex gap-4 text-gray-500">
+            <a><i class="fa-brands fa-facebook"></i></a>
+            <a><i class="fa-brands fa-twitter"></i></a>
+            <a><i class="fa-brands fa-google"></i></a>
+            <a><i class="fa-brands fa-square-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </section>
+  <script src="js/login.js"></script>
+ </body>
+</html>

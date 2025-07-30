@@ -1,0 +1,55 @@
+body{
+font-family: 'Work Sans', sans-serif;
+/*background-color: red;*/
+}
+:root{
+--main-color: #42de89;
+}
+html{
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+}
+ul,
+dl{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.mail,
+.pass,
+.use{
+  box-sizing: border-box;
+  overflow:auto;
+  font-size: 16px;
+}
+input{
+  padding-right: 2rem;
+}
+button{
+  cursor: pointer;
+}
+.login{
+  box-shadow: 0 12px 20px 0px rgb(0 0 0 / 13% ), 0 2px 4px 0px rgb(0 0 0 / 12% ); 
+}
+.or::before{
+  content: "";
+  background-color: #ccc;
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  left: 20px;
+  top: 9px;
+  
+}
+.or::after{
+  content: "";
+  background-color: #ccc;
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  right:20px;
+  top: 9px;
+  
+}
